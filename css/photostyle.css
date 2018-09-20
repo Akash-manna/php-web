@@ -1,0 +1,211 @@
+.pictures{
+  padding:0;
+  margin:0;
+  background:#F40A0A;
+  font-family: 'Open Sans', sans-serif;
+  width:100%;
+  height:100%;
+}
+img{
+	display:block;
+	max-width:100%;
+}
+	#gallery{
+		width:90%;
+    height:100%;
+		background:#fff;
+		display:block;
+		margin:20px auto;
+    min-width:300px;
+	}
+	.product_grid{
+		display:block;
+		float:left;
+    margin-bottom:30px;
+	}
+  .column_1{
+    width:100%;
+    background:#fff;
+    position:relative;
+  }
+  .product_img{
+    width:100%;
+    height:320px;
+    background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg')0% 40%;
+    background-size:cover;
+  }
+  .product_details{
+    transition:all .9s linear;
+    background:rgba(0,0,0,0.3);
+    position:absolute;
+    bottom:0;
+    width:0px;
+    height:0px;
+    overflow:hidden;
+    opacity:0;
+    color:#FFF;
+  }
+.column_6:hover .product_details,
+.column_5:hover .product_details,
+.column_4:hover .product_details,
+.column_3:hover .product_details,
+.column_2:hover .product_details,
+.column_1:hover .product_details{
+  width:100%;
+  height:100%;
+  right:0;
+  opacity:1;
+  padding:1em;
+  
+}
+.action{
+  width:50%;
+  margin:10px auto;
+}
+.product_details .title,
+.product_details .price{
+  font-weight:300;
+  line-height:1;
+}
+a.button{
+    display:inline-block;
+    color:#FFF;
+    background:salmon;
+    margin:5px 0 0 5%;
+    text-align:center;
+    width:200px;
+    text-decoration:none;
+    padding:10px 10px;
+    border-radius:2px;
+    border-bottom:3px solid #ff6536;
+    text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+  }
+.column_2{
+  width:50%;
+  float:left;
+  position:relative;
+  background:#FFF;
+}
+.column_2 .action{
+  width:44%;
+}
+.product_img_2{
+    width:100%;
+    height:320px;
+    background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rapunzel.jpg')0% 40%;
+    background-size:cover;
+  }
+.column_3{
+  width:33.3333333%;
+  float:left;
+  position:relative;
+  background:#FFF;
+}
+.column_3 .action{
+  width:75%;
+  margin:10px auto;
+}
+.column_4{
+  width:25%;
+  float:left;
+  position:relative;
+  background:#FFF;
+}
+.column_5{
+  width:20%;
+  float:left;
+  position:relative;
+  background:#fff;
+}
+.column_6{
+  width:16.66666666667%;
+  float:left;
+  position:relative;
+  background:#FFF;
+}
+.column_6 .action,
+.column_5 .action,
+.column_4 .action{
+  width:100%;
+  margin:10px auto;
+}
+.column_6 .action .button,
+.column_5 .action .button,
+.column_4 .action .button{
+  width:100%;
+  margin:5px 0 0 0;
+}
+
+.product_img_3{
+    width:100%;
+    height:320px;
+    background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/belle.jpg')0% 40%;
+    background-size:cover;
+  }
+.product_img_4{
+    width:100%;
+    height:320px;
+    background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/mulan_2.jpg')0% 40%;
+    background-size:cover;
+  }
+.product_img_5{
+    width:100%;
+    height:320px;
+    background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sleeping-beauty.jpg')0% 40%;
+    background-size:cover;
+  }
+.product_img_6{
+    width:100%;
+    height:320px;
+    background:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/snow-white.jpg')0% 40%;
+    background-size:cover;
+  }
+@media (max-width:900px){
+  .column_6{
+    width:20%;
+  }
+}
+@media (max-width:768px){
+  .column_6,
+  .column_5{
+    width:25%;
+  }
+  .product_desc{
+    display:none;
+  }
+}
+@media (max-width:600px){
+  .column_6,
+  .column_5,
+  .column_4{
+    width:33.3333333333%;
+  }
+  .product_details{
+    display:block;
+    opacity:1;
+    width:100%;
+    height:100%;
+    padding:1em;
+    position:relative;
+}
+  .column_1 .action,
+.column_2 .action,
+.column_3 .action{
+  width:100%;
+  margin:10px auto;
+}
+.column_3 .action .button,
+.column_2 .action .button,
+.column_1 .action .button{
+  width:100%;
+  margin:5px 0 0 0;
+}
+@media (max-width:500px){
+  .column_6,
+  .column_5,
+  .column_4,
+  .column_3,
+  .column_2{
+    width:100%;
+  }
+}
